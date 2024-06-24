@@ -118,8 +118,6 @@ function App() {
               alignItems: "center",
               gap: "8rem",
               mt: "6rem",
-              // flexShrink: 0,
-              // height: "65%",
             }}
           >
             <Section sections={sectionMedia} />
