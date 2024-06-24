@@ -116,8 +116,8 @@ function App() {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              gap: "8rem",
-              mt: "6rem",
+              // gap: "8rem",
+              // mt: "6rem",
             }}
           >
             <Section sections={sectionMedia} />
