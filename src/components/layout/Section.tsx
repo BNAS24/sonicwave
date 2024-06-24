@@ -124,11 +124,12 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                     />
                   ) : (
                     <video
-                      controls
+                      // controls
                       loop
                       autoPlay
                       muted
-                      poster="path/to/poster-image.jpg"
+                      preload="auto"
+                      // poster="path/to/poster-image.jpg"
                       style={{ height: "100%", width: "100%" }}
                     >
                       <source src={section.video_src} type="video/webm" />
