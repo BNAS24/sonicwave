@@ -1,10 +1,12 @@
 import { Nav } from "@/components/navigation/Nav";
 import theme from "@/styles/muiTheme";
 import "@fontsource/pt-sans";
-import { Box, Container, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import "./App.css";
 import { SubscribeForm } from "./components/buttons/call-to-action/SubscribeForm";
+import { Section } from "./components/layout/Section";
+import { sectionMedia } from "./assets/section-media";
 
 function App() {
   return (
@@ -37,7 +39,8 @@ function App() {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              maxWidth: "100%",
+              // maxWidth: "100%",
+              width: "100%",
               height: "100vh",
               paddingX: {
                 xs: "3rem", // 0px
@@ -46,21 +49,11 @@ function App() {
                 lg: "5rem", // 1200px
                 xl: "5rem", // 1536px
               },
+              background:
+                "url(media/heroimage/concert-official.webp) center/cover no-repeat ",
               overflowX: "hidden",
             }}
           >
-            <Box
-              component="img"
-              alt="Sonicwave Hero Image"
-              src="/media/heroimage/concert-official.webp"
-              style={{
-                position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
-            />
             <Typography
               align="center"
               fontWeight="bold"
@@ -113,7 +106,6 @@ function App() {
 
             {/*Input text field for email address*/}
             <SubscribeForm />
-
           </Container>
 
           {/*Information about events container*/}
@@ -125,7 +117,7 @@ function App() {
               height: "65%",
             }}
           >
-            Hello World
+            <Section sections={sectionMedia}/>
           </Container>
         </Container>
       </ThemeProvider>
