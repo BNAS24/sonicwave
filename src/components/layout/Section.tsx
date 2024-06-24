@@ -36,6 +36,7 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                   flexDirection: "column",
                   alignItems: "center",
                   justifyContent: "center",
+                  gap: "1rem",
                 }}
               >
                 {/*Primary text for section*/}
