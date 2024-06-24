@@ -25,27 +25,28 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                 alignItems: "center",
                 justifyContent: "center",
                 width: "100%",
-                height: "80vh",
+                height: "100vh",
                 gap: "1.5rem",
               }}
             >
               {/*Main content container*/}
               <Container
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
               >
                 {/*Primary text for section*/}
                 <Container
+                  disableGutters={true}
                   sx={{
                     display: "flex",
                     flexDirection: "column",
                     alignitems: "center",
                     justifyContent: "center",
-                    // gap: "1rem",
+                    gap: "0.5rem",
                     width: {
                       xs: "100%", // 0px
                       sm: "100%", // 600px
@@ -68,7 +69,7 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                     sx={{
                       fontWeight: "bold",
                       fontSize: {
-                        xs: "2rem", // 0px
+                        xs: "4rem", // 0px
                         sm: "", // 600px
                         md: "", // 900px
                         lg: "", // 1200px
@@ -82,7 +83,7 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                     align="center"
                     sx={{
                       fontSize: {
-                        xs: "1rem", // 0px
+                        xs: "1.1rem", // 0px
                         sm: "", // 600px
                         md: "", // 900px
                         lg: "", // 1200px
@@ -96,6 +97,7 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
 
                 {/*Media for section*/}
                 <Container
+                  disableGutters={true}
                   sx={{
                     display: "flex",
                     alignItems: "center",
