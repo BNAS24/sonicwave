@@ -52,7 +52,7 @@ function App() {
             <Box
               component="img"
               alt="Sonicwave Hero Image"
-              src="/media/concert-official.webp"
+              src="/media/heroimage/concert-official.webp"
               style={{
                 position: "absolute",
                 inset: 0,
