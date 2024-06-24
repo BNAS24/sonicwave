@@ -2,7 +2,6 @@
   "compilerOptions": {
     "lib": ["ESNext", "DOM"],
     "allowJs": true,
-    "checkJs": true,
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -25,5 +24,6 @@
     "**/*.tsx",
     "src/styles/muiTheme.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  // "allowImportingTsExtensions": true  // Add this line
 }
