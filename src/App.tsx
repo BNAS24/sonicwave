@@ -7,6 +7,7 @@ import "./App.css";
 import { SubscribeForm } from "./components/buttons/call-to-action/SubscribeForm";
 import { Section } from "./components/layout/Section";
 import { sectionMedia } from "./assets/section-media";
+import { Footer } from "./components/navigation/Footer";
 
 function App() {
   return (
@@ -129,6 +130,7 @@ function App() {
                 alignItems: "center",
                 justifyContent: "center",
                 padding: "1rem 1rem",
+                height: "90vh",
               }}
             >
               <Typography
@@ -150,6 +152,7 @@ function App() {
                 nature.
               </Typography>
             </Container>
+            <Footer />
           </Container>
         </Container>
       </ThemeProvider>
