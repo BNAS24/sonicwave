@@ -59,7 +59,7 @@ function App() {
               fontWeight="bold"
               sx={{
                 fontSize: {
-                  xs: "3.5rem", // 0px
+                  xs: "4.2rem", // 0px
                   sm: "4.5rem", // 600px
                   md: "5rem", // 900px
                   lg: "5.4rem", // 1200px
@@ -121,6 +121,35 @@ function App() {
             }}
           >
             <Section sections={sectionMedia} />
+            <Container
+              disableGutters={true}
+              maxWidth={false}
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "1rem 1rem",
+              }}
+            >
+              <Typography
+                align="center"
+                sx={{
+                  fontSize: {
+                    xs: "1.5rem", // 0px
+                    sm: "", // 600px
+                    md: "", // 900px
+                    lg: "", // 1200px
+                    xl: "", // 1536px
+                  },
+                }}
+              >
+                SonicWave is more than just a festival, it’s a cultural
+                phenomenon that celebrates the fusion of music, art, and
+                community. Set against the backdrop of scenic landscapes, our
+                festival is designed to create a harmonious blend of sound and
+                nature.
+              </Typography>
+            </Container>
           </Container>
         </Container>
       </ThemeProvider>

@@ -25,7 +25,7 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                 alignItems: "center",
                 justifyContent: "center",
                 width: "100%",
-                height: "100vh",
+                height: "90vh",
                 gap: "1.5rem",
               }}
             >
