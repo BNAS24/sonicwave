@@ -24,7 +24,7 @@ function App() {
             bottom: "64px",
             display: "flex",
             flexDirection: "column",
-            height: "100%",
+            // height: "100%",
             zIndex: 1,
           }}
         >
@@ -113,11 +113,16 @@ function App() {
             disableGutters={true}
             maxWidth={false}
             sx={{
-              flexShrink: 0,
-              height: "65%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "8rem",
+              mt: "6rem",
+              // flexShrink: 0,
+              // height: "65%",
             }}
           >
-            <Section sections={sectionMedia}/>
+            <Section sections={sectionMedia} />
           </Container>
         </Container>
       </ThemeProvider>

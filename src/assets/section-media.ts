@@ -6,7 +6,7 @@ export const sectionMedia: sectionData[] = [
     title: "Epic Lineup",
     description:
       "Featuring world-renowned artists, emerging talents, and genre-blending performances across multiple stages.",
-    image_src: "media/sections/singer.webp",
+    image_src: "media/sections/lilbaby.webp",
     video_src: "",
   },
   {
@@ -22,7 +22,7 @@ export const sectionMedia: sectionData[] = [
     title: "Global Sound",
     description:
       "A diverse mix of music genres from hip-hop, EDM, rock, and beyond – there’s something for everyone.",
-    image_src: "media/sections/lilbaby.webp",
+    image_src: "media/sections/singer.webp",
     video_src: "",
   },
 ];
