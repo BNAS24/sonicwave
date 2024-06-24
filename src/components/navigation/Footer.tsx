@@ -7,17 +7,24 @@ export const Footer = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        height: "64px",
+        width: "100%",
       }}
     >
-      <Typography align="center" sx={{
-        fontSize: {
+      <Typography
+        align="center"
+        sx={{
+          fontSize: {
             xs: "1.rem", // 0px
             sm: "", // 600px
             md: "", // 900px
             lg: "", // 1200px
-            xl: "", // 1536px    
-        }
-      }}>Website created Brandon Bradley</Typography>
+            xl: "", // 1536px
+          },
+        }}
+      >
+        Website created Brandon Bradley
+      </Typography>
     </Container>
   );
 };

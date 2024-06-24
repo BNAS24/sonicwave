@@ -137,7 +137,7 @@ function App() {
                 align="center"
                 sx={{
                   fontSize: {
-                    xs: "1.5rem", // 0px
+                    xs: "2rem", // 0px
                     sm: "", // 600px
                     md: "", // 900px
                     lg: "", // 1200px
@@ -145,7 +145,7 @@ function App() {
                   },
                 }}
               >
-                SonicWave is more than just a festival, it’s a cultural
+                Sonicwave is more than just a festival, it’s a cultural
                 phenomenon that celebrates the fusion of music, art, and
                 community. Set against the backdrop of scenic landscapes, our
                 festival is designed to create a harmonious blend of sound and
