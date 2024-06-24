@@ -129,6 +129,7 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                       autoPlay
                       muted
                       preload="auto"
+                      playsInline
                       // poster="path/to/poster-image.jpg"
                       style={{ height: "100%", width: "100%" }}
                     >
