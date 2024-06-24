@@ -75,7 +75,7 @@ function App() {
               align="center"
               sx={{
                 fontSize: {
-                  xs: "1rem", // 0px
+                  xs: "1.1rem", // 0px
                   sm: "1.2rem", // 600px
                   md: "1.3rem", // 900px
                   lg: "1.6rem", // 1200px

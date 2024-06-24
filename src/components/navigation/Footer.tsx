@@ -15,7 +15,7 @@ export const Footer = () => {
         align="center"
         sx={{
           fontSize: {
-            xs: "1.rem", // 0px
+            xs: "1rem", // 0px
             sm: "", // 600px
             md: "", // 900px
             lg: "", // 1200px
