@@ -23,7 +23,7 @@ export const Footer = () => {
           },
         }}
       >
-        Website created Brandon Bradley
+        Website created by Brandon Bradley
       </Typography>
     </Container>
   );
