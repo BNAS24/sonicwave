@@ -117,7 +117,7 @@ function App() {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              // gap: "8rem",
+              gap: "1rem",
               // mt: "6rem",
             }}
           >
@@ -138,10 +138,10 @@ function App() {
                 sx={{
                   fontSize: {
                     xs: "2rem", // 0px
-                    sm: "", // 600px
-                    md: "", // 900px
-                    lg: "", // 1200px
-                    xl: "", // 1536px
+                    sm: "3rem", // 600px
+                    md: "3.5rem", // 900px
+                    lg: "4rem", // 1200px
+                    xl: "4rem", // 1536px
                   },
                 }}
               >

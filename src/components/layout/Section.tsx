@@ -15,25 +15,25 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
               sx={{
                 flexShrink: 0,
                 display: "flex",
-                flexDirection: {
-                  xs: "column", // 0px
-                  sm: "column", // 600px
-                  md: section.id % 2 === 0 ? "row" : "row-reverse", // 900px
-                  lg: section.id % 2 === 0 ? "row" : "row-reverse", // 1200px
-                  xl: section.id % 2 === 0 ? "row" : "row-reverse", // 1536px
-                },
                 alignItems: "center",
                 justifyContent: "center",
                 width: "100%",
-                height: "90vh",
+                minHeight: "90vh",
                 gap: "1.5rem",
               }}
             >
               {/*Main content container*/}
               <Container
+                maxWidth={false}
                 sx={{
                   display: "flex",
-                  flexDirection: "column",
+                  flexDirection: {
+                    xs: "column", // 0px
+                    sm: "column", // 600px
+                    md: section.id % 2 === 0 ? "row" : "row-reverse", // 900px
+                    lg: section.id % 2 === 0 ? "row" : "row-reverse", // 1200px
+                    xl: section.id % 2 === 0 ? "row" : "row-reverse", // 1536px
+                  },
                   alignItems: "center",
                   justifyContent: "center",
                   gap: "1rem",
@@ -71,10 +71,10 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                       fontWeight: "bold",
                       fontSize: {
                         xs: "4rem", // 0px
-                        sm: "", // 600px
-                        md: "", // 900px
-                        lg: "", // 1200px
-                        xl: "", // 1536px
+                        sm: "4rem", // 600px
+                        md: "4.5rem", // 900px
+                        lg: "5rem", // 1200px
+                        xl: "5rem", // 1536px
                       },
                     }}
                   >
@@ -85,10 +85,10 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                     sx={{
                       fontSize: {
                         xs: "1.1rem", // 0px
-                        sm: "", // 600px
-                        md: "", // 900px
-                        lg: "", // 1200px
-                        xl: "", // 1536px
+                        sm: "1.2rem", // 600px
+                        md: "1.4rem", // 900px
+                        lg: "1.6rem", // 1200px
+                        xl: "1.6rem", // 1536px
                       },
                     }}
                   >
@@ -125,6 +125,7 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                     maxWidth={false}
                     sx={{
                       aspectRatio: "4/3",
+                      position: "relative",
                     }}
                   >
                     {/*Conditionally rending either an image or a video depending on data*/}
@@ -144,7 +145,11 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                         preload="auto"
                         playsInline
                         // poster="path/to/poster-image.jpg"
-                        style={{ height: "100%", width: "100%" }}
+                        style={{
+                          height: "100%",
+                          width: "100%",
+                          objectFit: "cover",
+                        }}
                       >
                         <source src={section.video_src} type="video/webm" />
                         Your browser does not support the video tag.
