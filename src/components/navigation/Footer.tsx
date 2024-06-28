@@ -21,6 +21,7 @@ export const Footer = () => {
             lg: "", // 1200px
             xl: "", // 1536px
           },
+          scrollSnapAlign: "end",
         }}
       >
         Website created by Brandon Bradley
