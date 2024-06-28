@@ -135,7 +135,7 @@ function App() {
                 alignItems: "center",
                 justifyContent: "center",
                 padding: "1rem 1rem",
-                minHeight: "90vh",
+                minHeight: "80vh",
               }}
             >
               <Typography
