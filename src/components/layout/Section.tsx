@@ -17,9 +17,10 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                width: "100%",
-                minHeight: "90vh",
+                width: "100vw",
+                minHeight: "100vh",
                 gap: "1.5rem",
+                scrollSnapAlign: "start",
               }}
             >
               {/*Main content container*/}
@@ -138,7 +139,6 @@ export const Section = ({ sections }: { sections: sectionData[] }) => {
                       />
                     ) : (
                       <video
-                        // controls
                         loop
                         autoPlay
                         muted

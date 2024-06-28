@@ -25,7 +25,9 @@ function App() {
             bottom: "64px",
             display: "flex",
             flexDirection: "column",
-            // height: "100%",
+            overflowY: "scroll",
+            scrollSnapType: "y mandatory",
+            height: "100vh",
             zIndex: 1,
           }}
         >
@@ -40,7 +42,6 @@ function App() {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              // maxWidth: "100%",
               width: "100%",
               height: "100vh",
               paddingX: {
@@ -50,6 +51,7 @@ function App() {
                 lg: "5rem", // 1200px
                 xl: "5rem", // 1536px
               },
+              scrollSnapAlign: "start",
               background:
                 "url(media/heroimage/concert-official.webp) center/cover no-repeat ",
               overflowX: "hidden",
@@ -119,9 +121,12 @@ function App() {
               alignItems: "center",
               gap: "1rem",
               // mt: "6rem",
+              minHeight: "100vh",
+              // scrollSnapAlign: "start",
             }}
           >
             <Section sections={sectionMedia} />
+
             <Container
               disableGutters={true}
               maxWidth={false}
@@ -130,7 +135,7 @@ function App() {
                 alignItems: "center",
                 justifyContent: "center",
                 padding: "1rem 1rem",
-                height: "90vh",
+                minHeight: "90vh",
               }}
             >
               <Typography
@@ -143,6 +148,7 @@ function App() {
                     lg: "4rem", // 1200px
                     xl: "4rem", // 1536px
                   },
+                  scrollSnapAlign: "start",
                 }}
               >
                 Sonicwave is more than just a festival, it’s a cultural
